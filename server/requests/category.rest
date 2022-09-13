@@ -1,0 +1,42 @@
+###
+POST http://localhost:8000/api/signin
+Content-Type: application/json
+
+{
+  "email": "test1@example.com",
+  "password": "1234567"
+}
+
+###
+POST http://localhost:8000/api/category/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjMxNmY3YmIwMWFjZjE1ODcyZjMzMTFmIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2MjQ4ODQ2NiwiZXhwIjoxNjYyNDkyMDY2fQ.KWwDQt7I2M3gEYTrHKLa5Zvm6-YU9DlfSKW3YAJPyjo
+
+{
+  "name": "Category 3",
+  "detail": "This is category 3"
+}
+
+###
+GET  http://localhost:8000/api/category/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjMxNmY3YmIwMWFjZjE1ODcyZjMzMTFmIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2MjY0NTc1MSwiZXhwIjoxNjYyNjQ5MzUxfQ.bc10KjLARqLUuQLtIGrqkeaBMYJw202CmReqhFlI5_s
+
+###
+GET  http://localhost:8000/api/category/631781fb3bac8a04eab7ac49
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjMxNmY3YmIwMWFjZjE1ODcyZjMzMTFmIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2MjY0NTc1MSwiZXhwIjoxNjYyNjQ5MzUxfQ.bc10KjLARqLUuQLtIGrqkeaBMYJw202CmReqhFlI5_s
+
+###
+PUT http://localhost:8000/api/category/63178c0a495108f0bc05b085
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjMxNmY3YmIwMWFjZjE1ODcyZjMzMTFmIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2MjQ4ODQ2NiwiZXhwIjoxNjYyNDkyMDY2fQ.KWwDQt7I2M3gEYTrHKLa5Zvm6-YU9DlfSKW3YAJPyjo
+
+{
+  "name": "Category 1 New"
+}
+
+###
+DELETE  http://localhost:8000/api/category/63178bf8495108f0bc05b081
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjMxNmY3YmIwMWFjZjE1ODcyZjMzMTFmIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2MjQ4ODQ2NiwiZXhwIjoxNjYyNDkyMDY2fQ.KWwDQt7I2M3gEYTrHKLa5Zvm6-YU9DlfSKW3YAJPyjo

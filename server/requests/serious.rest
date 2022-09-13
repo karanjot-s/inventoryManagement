@@ -1,0 +1,49 @@
+POST http://localhost:8000/api/signup
+Content-Type: application/json
+
+{
+  "name": "Karanjot Singh",
+  "email": "karanjot2409@gmail.com",
+  "password": "123456"
+}
+
+###
+
+POST http://localhost:8000/api/signin
+Content-Type: application/json
+
+{
+  "email": "karanjot2409@gmail.com",
+  "password": "123456"
+}
+
+###
+
+POST http://localhost:8000/api/forgot
+Content-Type: application/json
+
+{
+  "email": "karanjot2409@gmail.com"
+}
+
+###
+
+POST http://localhost:8000/api/verify-token
+Content-Type: application/json
+
+{
+  "userId": "6316f7bb01acf15872f3311f",
+  "token": "9fb66bf47416fe9b08aa7614578b785f8026dbd899cdad4f60c3dac54cc7c6ac"
+}
+
+### 
+
+POST http://localhost:8000/api/reset-pass
+Content-Type: application/json
+
+{
+  "userId": "6316f7bb01acf15872f3311f",
+  "token": "9fb66bf47416fe9b08aa7614578b785f8026dbd899cdad4f60c3dac54cc7c6ac",
+  "password": "1234567"
+}
+

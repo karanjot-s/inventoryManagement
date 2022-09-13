@@ -1,0 +1,74 @@
+POST http://localhost:8000/api/signup
+Content-Type: application/json
+
+{
+  "name": "Test1",
+  "email": "test1@example.com",
+  "password": "123456"
+}
+
+###
+
+POST http://localhost:8000/api/signin
+Content-Type: application/json
+
+{
+  "email": "test1@example.com",
+  "password": "1234567"
+}
+
+###
+
+POST http://localhost:8000/api/user/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjMxNmY3YmIwMWFjZjE1ODcyZjMzMTFmIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2MjQ0OTc4OSwiZXhwIjoxNjYyNDUzMzg5fQ.L-9iDcwg4Y0gbYHBuSYPacLj8RANV5csq5e0Nat7Vy4
+
+{
+  "name": "New Test 1"
+}
+
+###
+
+POST http://localhost:8000/api/user/update-pass
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjMxNmY3YmIwMWFjZjE1ODcyZjMzMTFmIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2MjQ2NTY5NSwiZXhwIjoxNjYyNDY5Mjk1fQ.Hxyi_ZVdLkM9mXgQtVXO2RU-DEN0L-eWDbatrk5Pwig
+
+{
+  "oldPassword": "123456",
+  "password": "1234567"
+}
+
+###
+
+POST http://localhost:8000/api/forgot
+Content-Type: application/json
+
+{
+  "email": "test1@example.com"
+}
+
+###
+
+POST http://localhost:8000/api/verify-token
+Content-Type: application/json
+
+{
+  "userId": "6316f7bb01acf15872f3311f",
+  "token": "9fb66bf47416fe9b08aa7614578b785f8026dbd899cdad4f60c3dac54cc7c6ac"
+}
+
+###
+GET http://localhost:8000/api/check-token/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyQGdtYWlsLmNvbSIsInVzZXJJZCI6IjYzMThjMjQ3OTIyYzQxYTlhNmUzMzVhMSIsImR1cmF0aW9uIjozNjAwLCJpYXQiOjE2NjI1NjY5OTIsImV4cCI6MTY2MjU3MDU5Mn0.kAmq7yj17CT-dSliBuIB4YmRmFSVtj7aVJVbNPcSa0o
+Content-Type: application/json
+
+### 
+
+POST http://localhost:8000/api/reset-pass
+Content-Type: application/json
+
+{
+  "userId": "6316f7bb01acf15872f3311f",
+  "token": "9fb66bf47416fe9b08aa7614578b785f8026dbd899cdad4f60c3dac54cc7c6ac",
+  "password": "1234567"
+}
+

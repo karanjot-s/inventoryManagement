@@ -1,0 +1,48 @@
+###
+POST http://localhost:8000/api/signin
+Content-Type: application/json
+
+{
+  "email": "test1@example.com",
+  "password": "1234567"
+}
+
+###
+GET  http://localhost:8000/api/category/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjMxNmY3YmIwMWFjZjE1ODcyZjMzMTFmIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2MjQ4ODQ2NiwiZXhwIjoxNjYyNDkyMDY2fQ.KWwDQt7I2M3gEYTrHKLa5Zvm6-YU9DlfSKW3YAJPyjo
+
+###
+POST http://localhost:8000/api/product/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjMxNmY3YmIwMWFjZjE1ODcyZjMzMTFmIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2MjQ4ODQ2NiwiZXhwIjoxNjYyNDkyMDY2fQ.KWwDQt7I2M3gEYTrHKLa5Zvm6-YU9DlfSKW3YAJPyjo
+
+{
+  "name": "Product 2",
+  "detail": "This is product 2",
+  "category": "Category 2"
+}
+
+###
+GET  http://localhost:8000/api/product/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjMxNmY3YmIwMWFjZjE1ODcyZjMzMTFmIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2MjQ4ODQ2NiwiZXhwIjoxNjYyNDkyMDY2fQ.KWwDQt7I2M3gEYTrHKLa5Zvm6-YU9DlfSKW3YAJPyjo
+
+###
+GET  http://localhost:8000/api/product/6317972c95a32e752a1e3ef0
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjMxNmY3YmIwMWFjZjE1ODcyZjMzMTFmIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2MjQ4ODQ2NiwiZXhwIjoxNjYyNDkyMDY2fQ.KWwDQt7I2M3gEYTrHKLa5Zvm6-YU9DlfSKW3YAJPyjo
+
+###
+PUT http://localhost:8000/api/product/6317972395a32e752a1e3eed
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjMxNmY3YmIwMWFjZjE1ODcyZjMzMTFmIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2MjQ4ODQ2NiwiZXhwIjoxNjYyNDkyMDY2fQ.KWwDQt7I2M3gEYTrHKLa5Zvm6-YU9DlfSKW3YAJPyjo
+
+{
+  "name": "Product 1 New"
+}
+
+###
+DELETE  http://localhost:8000/api/product/63178bf8495108f0bc05b081
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjMxNmY3YmIwMWFjZjE1ODcyZjMzMTFmIiwiZHVyYXRpb24iOjM2MDAsImlhdCI6MTY2MjQ4ODQ2NiwiZXhwIjoxNjYyNDkyMDY2fQ.KWwDQt7I2M3gEYTrHKLa5Zvm6-YU9DlfSKW3YAJPyjo
