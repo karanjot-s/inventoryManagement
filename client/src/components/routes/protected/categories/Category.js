@@ -51,7 +51,7 @@ const Category = () => {
           <Button asLink to={`/category/${catId}/update`}>
             Update
           </Button>
-          <Button onClick={handleDelete} className="bg-red-600">
+          <Button onClick={handleDelete} color="red">
             Delete
           </Button>
         </div>

@@ -9,7 +9,12 @@ const Categories = () => {
   return (
     <>
       <h2 className="text-center text-2xl mb-6">Categories</h2>
-      <Button className="m-auto mb-5 bg-slate-900" asLink to="/category/new">
+      <Button
+        className="m-auto mb-5"
+        asLink
+        to="/category/new"
+        colorWeight={"900"}
+      >
         New Category
       </Button>
       <div className="flex flex-wrap items-center justify-center gap-4">

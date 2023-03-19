@@ -56,7 +56,7 @@ const Product = () => {
           <Button asLink to={`/product/${prodId}/update`}>
             Update
           </Button>
-          <Button onClick={handleDelete} className="bg-red-600">
+          <Button onClick={handleDelete} color="red">
             Delete
           </Button>
         </div>

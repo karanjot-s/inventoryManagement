@@ -9,7 +9,12 @@ const Products = () => {
   return (
     <>
       <h2 className="text-center text-2xl mb-6">Products</h2>
-      <Button className="m-auto mb-5 bg-slate-900" asLink to="/product/new">
+      <Button
+        className="m-auto mb-5"
+        colorWeight="900"
+        asLink
+        to="/product/new"
+      >
         New Product
       </Button>
       <div className="flex flex-wrap items-center justify-center gap-4">
